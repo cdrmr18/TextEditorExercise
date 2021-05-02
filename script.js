@@ -63,4 +63,12 @@ function makeUnderline(elem){
  */
 function alignText(elem, alignType){
   // CODE GOES HERE
+   document.getElementById('text-output').style.textAlign = alignType;
+   let buttons = document.getElementsByClassName('align');
+
+   for (let i = 0; i < buttons.length; i++){
+     buttons[i].classList.remove('active');
+   }
+
+   elem.classList.add('active');
 }
